@@ -1,0 +1,153 @@
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);   
+    --Dark-grayish-blue: hsl(228, 12%, 48%);       
+    --White: hsl(0, 0%, 100%);
+}
+
+p{
+    font-size: 14px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Cream); 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    background-color: var(--White);
+    width: 350px;
+    border-radius: 10px;
+}
+
+.container-img{
+    background-image: url('images/image-product-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    border-radius: 10px 10px 0 0
+}
+
+
+.description-container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.product{
+    color: var(--Dark-grayish-blue);
+    letter-spacing: .5em;
+    text-transform: uppercase;
+}
+
+.product-name{
+    padding-right: 1em;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: var(--Very-dark-blue);
+}
+
+.description-product{
+    font-size: 13px;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5em;
+}
+
+.buy-container{
+    margin-top: 2rem;
+}
+
+.prices{
+    margin-bottom: .8em;
+}
+
+.current-price{
+    margin-right: .5em;
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.old-price{
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.current-price,
+.old-price{
+    vertical-align: middle;
+}
+
+.btn{
+    background-color: var(--Dark-cyan);
+    padding: .8em; 
+    margin-bottom: 1rem ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icon-cart,
+.btn span{
+    vertical-align: middle;
+    color: var(--White);
+    font-weight: 700;
+}
+
+.btn:hover{
+    --Dark-cyan: hsl(158, 36%, 20%);
+    background-color: var(--Dark-cyan);
+    cursor: pointer;
+}
+
+@media screen and (min-width:1024px) {
+    
+    .container{
+        display: flex;
+        width: 600px;
+        height: 460px;
+    }
+
+    .product-name{
+        padding-right: .6em;
+    }
+
+    .container-img,
+    .description-container{
+        width: 50%;
+        
+    }
+
+    .container-img{
+        background-image: url('images/image-product-desktop.jpg');
+        background-size: cover;
+        border-radius: 10px 0px 0px 10px;
+        height: 460px;
+        
+    }
+
+    .description-container{
+        padding: .8em 2em;
+    }
+
+    .description-product{
+        padding-right: 2em;
+        line-height: 1.7;
+        font-size: .9rem;
+
+    }
+
+   
+}
+
+
+
+
+
+
+
